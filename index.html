@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>JavaScript Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Dokumentasi JS</header>
+      <ul>
+        <li>
+          <a href="#pengantar" class="nav-link">Pengantar</a>
+        </li>
+
+        <li>
+          <a href="#Apa-Yang-Harus-Anda-Ketahui" class="nav-link">
+            Apa Yang Harus Anda Ketahui</a
+          >
+        </li>
+        <li>
+          <a href="#JavaScript_and_Java" class="nav-link">
+            JavaScript dan Java</a
+          >
+        </li>
+        <li>
+          <a href="#hallo-dunia" class="nav-link"> Hallo Dunia</a>
+        </li>
+        <li>
+          <a href="#variabel" class="nav-link"> Variabel</a>
+        </li>
+        <li>
+          <a href="#deklarasi-variabel" class="nav-link"> Deklarasi Variabel</a>
+        </li>
+        <li>
+          <a href="#lingkup-variabel" class="nav-link"> Lingkup Variabel</a>
+        </li>
+        <li>
+          <a href="#variabel-global" class="nav-link"> Variabel Global</a>
+        </li>
+        <li>
+          <a href="#konstanta" class="nav-link">Konstanta</a>
+        </li>
+        <li>
+          <a href="#tipe-data" class="nav-link">Tipe Data</a>
+        </li>
+        <li>
+          <a href="#if-else" class="nav-link">if...else pernyataan</a>
+        </li>
+        <li>
+          <a href="#while-pernyataan" class="nav-link">While pernyataan</a>
+        </li>
+        <li>
+          <a href="#deklarasi-fungsi" class="nav-link">Deklarasi Fungsi</a>
+        </li>
+        <li>
+          <a href="#referensi" class="nav-link">Referensi</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="pengantar">
+        <header>Pengantar</header>
+        <article>
+          <p>
+            JavaScript adalah bahasa skrip lintas platform berorientasi objek.
+            Ini adalah bahasa yang kecil dan ringan. Di dalam lingkungan host
+            (misalnya, browser web), JavaScript dapat dihubungkan ke objek
+            lingkungannya untuk memberikan kontrol terprogram atas mereka.
+          </p>
+
+          <p>
+            JavaScript berisi pustaka objek standar, seperti Array, Date, dan
+            Math, dan sekumpulan inti elemen bahasa seperti operator, struktur
+            kontrol, dan pernyataan. Inti JavaScript dapat diperluas untuk
+            berbagai tujuan dengan melengkapinya dengan objek tambahan; sebagai
+            contoh:
+          </p>
+
+          <ul>
+            <li>
+              JavaScript sisi klien memperluas bahasa inti dengan menyediakan
+              objek untuk mengontrol browser dan Model Objek Dokumen (DOM).
+              Misalnya, ekstensi sisi klien memungkinkan aplikasi untuk
+              menempatkan elemen pada formulir HTML dan merespons peristiwa
+              pengguna seperti klik mouse, input formulir, dan navigasi halaman.
+            </li>
+            <li>
+              JavaScript sisi server memperluas bahasa inti dengan menyediakan
+              objek yang relevan untuk menjalankan JavaScript di server.
+              Misalnya, ekstensi sisi server memungkinkan aplikasi untuk
+              berkomunikasi dengan database, memberikan kontinuitas informasi
+              dari satu permintaan ke aplikasi lainnya, atau melakukan
+              manipulasi file di server.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Apa-Yang-Harus-Anda-Ketahui">
+        <header>Apa Yang Harus Anda Ketahui</header>
+        <article>
+          <p>
+            Panduan ini mengasumsikan Anda memiliki latar belakang dasar
+            berikut:
+          </p>
+
+          <ul>
+            <li>Pemahaman umum tentang Internet dan World Wide Web (WWW).</li>
+            <li>
+              Pengetahuan kerja yang baik tentang HyperText Markup Language
+              (HTML).
+            </li>
+            <li>
+              Beberapa pengalaman pemrograman. Jika Anda baru mengenal
+              pemrograman, coba salah satu tutorial yang ditautkan di halaman
+              utama tentang JavaScript.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="JavaScript_and_Java">
+        <header>JavaScript dan Java</header>
+        <article>
+          <p>
+            JavaScript dan Java mirip dalam beberapa hal, tetapi pada dasarnya
+            berbeda dalam beberapa hal. Bahasa JavaScript menyerupai Java tetapi
+            tidak memiliki pengetikan statis dan pemeriksaan jenis yang kuat
+            dari Java. JavaScript mengikuti sebagian besar sintaks ekspresi
+            Java, konvensi penamaan, dan konstruksi aliran kontrol dasar yang
+            menjadi alasan mengapa ia diganti namanya dari LiveScript ke
+            JavaScript.
+          </p>
+          <p>
+            Berbeda dengan sistem waktu kompilasi kelas Java yang dibangun oleh
+            deklarasi, JavaScript mendukung sistem waktu proses berdasarkan
+            sejumlah kecil tipe data yang mewakili nilai numerik, Boolean, dan
+            string. JavaScript memiliki model objek berbasis prototipe daripada
+            model objek berbasis kelas yang lebih umum. Model berbasis prototipe
+            memberikan pewarisan dinamis; Artinya, apa yang diwarisi dapat
+            bervariasi untuk setiap objek. JavaScript juga mendukung fungsi
+            tanpa persyaratan deklaratif khusus. Fungsi dapat berupa properti
+            objek, dieksekusi sebagai metode yang diketik secara longgar.
+          </p>
+          <p>
+            JavaScript adalah bahasa dengan bentuk yang sangat bebas
+            dibandingkan dengan Java. Anda tidak perlu mendeklarasikan semua
+            variabel, kelas, dan metode. Anda tidak perlu khawatir dengan apakah
+            metode itu publik, pribadi, atau dilindungi, dan Anda tidak perlu
+            mengimplementasikan antarmuka. Variabel, parameter, dan jenis
+            kembalian fungsi tidak diketik secara eksplisit.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="hallo-dunia">
+        <header>Hallo Dunia</header>
+        <article>
+          <p>
+            Untuk mulai menulis JavaScript, buka Scratchpad dan tulis kode
+            JavaScript "Hello world" pertama Anda:
+          </p>
+          <code
+            >function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");</code
+          >
+          <p>
+            Pilih kode di pad dan tekan Ctrl + R untuk melihatnya terungkap di
+            browser Anda!
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="variabel">
+        <header>Variabel</header>
+        <p>
+          Anda menggunakan variabel sebagai nama simbolis untuk nilai dalam
+          aplikasi Anda. Nama variabel, yang disebut pengenal, sesuai dengan
+          aturan tertentu.
+        </p>
+        <p>
+          Pengenal JavaScript harus dimulai dengan huruf, garis bawah (_), atau
+          tanda dolar ($); karakter selanjutnya juga bisa berupa angka (0-9).
+          Karena JavaScript peka huruf besar / kecil, huruf menyertakan karakter
+          "A" hingga "Z" (huruf besar) dan karakter "a" hingga "z" (huruf
+          kecil).
+        </p>
+        <p>
+          Anda dapat menggunakan ISO 8859-1 atau huruf Unicode seperti å dan ü
+          dalam pengenal. Anda juga dapat menggunakan urutan escape Unicode
+          sebagai karakter dalam pengenal. Beberapa contoh nama resmi adalah
+          Number_hits, temp99, dan _name.
+        </p>
+      </section>
+
+      <section class="main-section" id="deklarasi-variabel">
+        <header>Deklarasi Variabel</header>
+        <article>
+          <p>Anda dapat mendeklarasikan variabel dengan tiga cara:</p>
+          <p>
+            Dengan kata kunci var. Sebagai contoh,
+            <code>var x = 42.</code>Sintaks ini dapat digunakan untuk
+            mendeklarasikan variabel lokal dan global.
+          </p>
+          <p>
+            Dengan hanya memberinya nilai. Sebagai contoh,
+            <code>x = 42.</code>Ini selalu mendeklarasikan variabel global. Ini
+            menghasilkan peringatan JavaScript yang ketat. Anda tidak boleh
+            menggunakan varian ini.
+          </p>
+          <p>
+            Dengan kata kunci let. Sebagai contoh,
+            <code> let y = 13.</code>Sintaks ini dapat digunakan untuk
+            mendeklarasikan variabel lokal lingkup blok. Lihat Cakupan variabel
+            di bawah.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="lingkup-variabel">
+        <header>Lingkup Variabel</header>
+        <article>
+          <p>
+            Saat Anda mendeklarasikan variabel di luar fungsi apa pun, itu
+            disebut variabel global, karena tersedia untuk kode lain dalam
+            dokumen saat ini. Saat Anda mendeklarasikan variabel di dalam
+            fungsi, itu disebut variabel lokal, karena hanya tersedia di dalam
+            fungsi itu.
+          </p>
+          <p>
+            JavaScript sebelum ECMAScript 2015 tidak memiliki cakupan pernyataan
+            blok; sebaliknya, variabel yang dideklarasikan di dalam blok
+            bersifat lokal ke fungsi (atau cakupan global) tempat blok tersebut
+            berada. Misalnya kode berikut akan mencatat 5, karena ruang lingkup
+            x adalah fungsi (atau konteks global) di mana x dideklarasikan,
+            bukan blok, yang dalam hal ini adalah pernyataan if.
+          </p>
+          <code>if (true) { var x = 5; } console.log(x); // 5</code>
+          <p>
+            Perilaku ini berubah, saat menggunakan deklarasi let yang
+            diperkenalkan di ECMAScript 2015.
+          </p>
+          <code
+            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+            not defined</code
+          >
+        </article>
+      </section>
+
+      <section class="main-section" id="variabel-global">
+        <header>Variabel Global</header>
+        <article>
+          <p>
+            Variabel global sebenarnya adalah properti dari objek global. Di
+            halaman web, objek global adalah jendela, sehingga Anda dapat
+            mengatur dan mengakses variabel global menggunakan sintaks
+            window.variable.
+          </p>
+          <p>
+            Akibatnya, Anda dapat mengakses variabel global yang dideklarasikan
+            dalam satu jendela atau bingkai dari jendela atau bingkai lain
+            dengan menentukan nama jendela atau bingkai. Misalnya, jika variabel
+            bernama phoneNumber dideklarasikan dalam dokumen, Anda dapat merujuk
+            ke variabel ini dari iframe sebagai parent.phoneNumber.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="konstanta">
+        <header>Konstanta</header>
+        <article>
+          <p>
+            Anda dapat membuat konstanta hanya-baca yang diberi nama dengan kata
+            kunci const. Sintaks pengenal konstan sama seperti pengenal
+            variabel: harus dimulai dengan huruf, garis bawah, atau tanda dolar
+            dan dapat berisi karakter alfabet, numerik, atau garis bawah.
+          </p>
+          <code>const PI = 3.14;</code>
+          <p>
+            Konstanta tidak dapat mengubah nilai melalui tugas atau
+            dideklarasikan ulang saat skrip sedang berjalan. Itu harus
+            diinisialisasi ke sebuah nilai.
+          </p>
+          <p>
+            Aturan cakupan untuk konstanta sama dengan aturan untuk variabel
+            lingkup blok let. Jika kata kunci const dihilangkan, pengenal
+            dianggap mewakili variabel.
+          </p>
+          <p>
+            Anda tidak dapat mendeklarasikan konstanta dengan nama yang sama
+            sebagai fungsi atau variabel dalam cakupan yang sama. Sebagai
+            contoh:
+          </p>
+          <code
+            >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+            WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+            //statements }</code
+          >
+          <p>
+            Namun, atribut objek tidak dilindungi, jadi pernyataan berikut
+            dijalankan tanpa masalah.
+          </p>
+          <code
+            >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+            "otherValue";</code
+          >
+        </article>
+      </section>
+
+      <section class="main-section" id="tipe-data">
+        <header>Tipe Data</header>
+        <article>
+          <p>Standar ECMAScript terbaru mendefinisikan tujuh tipe data:</p>
+          <ul>
+            <li>Enam tipe data yang primitif:</li>
+            <ul>
+              <li>Boolean. true and false.</li>
+              <li>
+                null. Kata kunci khusus yang menunjukkan nilai nol. Karena
+                JavaScript peka huruf besar-kecil, null tidak sama dengan Null,
+                NULL, atau varian lainnya.
+              </li>
+              <li>
+                undefined. Properti tingkat atas yang nilainya tidak ditentukan.
+              </li>
+              <li>Nomor. 42 or 3.14159.</li>
+              <li>String. "Howdy"</li>
+              <li>
+                Simbol (baru di ECMAScript 2015). Tipe data yang instansnya unik
+                dan tidak dapat diubah.
+              </li>
+            </ul>
+            <li>dan Object</li>
+          </ul>
+          <p>
+            Meskipun tipe data ini jumlahnya relatif kecil, mereka memungkinkan
+            Anda menjalankan fungsi yang berguna dengan aplikasi Anda. Objek dan
+            fungsi adalah elemen fundamental lainnya dalam bahasa. Anda bisa
+            menganggap objek sebagai wadah bernama untuk nilai, dan fungsi
+            sebagai prosedur yang bisa dilakukan aplikasi Anda.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="if-else">
+        <header>if...else pernyataan</header>
+        <article>
+          <p>
+            Gunakan pernyataan if untuk menjalankan pernyataan jika kondisi
+            logika benar. Gunakan klausa else opsional untuk menjalankan
+            pernyataan jika kondisinya salah. Pernyataan if terlihat sebagai
+            berikut:
+          </p>
+          <code>if (condition) { statement_1; } else { statement_2; }</code>
+          <p>
+            kondisi dapat berupa ekspresi apa pun yang mengevaluasi benar atau
+            salah. Lihat Boolean untuk penjelasan tentang apa yang dievaluasi
+            menjadi benar dan salah. Jika kondisi bernilai true, pernyataan_1
+            dijalankan; jika tidak, pernyataan_2 dijalankan. pernyataan_1 dan
+            pernyataan_2 bisa pernyataan apa pun, termasuk pernyataan if
+            bersarang lebih lanjut.
+          </p>
+          <p>
+            Anda juga dapat menggabungkan pernyataan menggunakan else if untuk
+            menguji beberapa kondisi secara berurutan, sebagai berikut:
+          </p>
+          <code
+            >if (condition_1) { statement_1; } else if (condition_2) {
+            statement_2; } else if (condition_n) { statement_n; } else {
+            statement_last; }</code
+          >
+          <p>
+            Dalam kasus beberapa kondisi, hanya kondisi logis pertama yang
+            bernilai true yang akan dijalankan. Untuk menjalankan beberapa
+            pernyataan, kelompokkan mereka dalam pernyataan blok ({...}). Secara
+            umum, praktik yang baik untuk selalu menggunakan pernyataan blok,
+            terutama saat menyusun pernyataan if:
+          </p>
+          <code
+            >if (condition) { statement_1_runs_if_condition_is_true;
+            statement_2_runs_if_condition_is_true; } else {
+            statement_3_runs_if_condition_is_false;
+            statement_4_runs_if_condition_is_false; }</code
+          >
+          <p>
+            Disarankan untuk tidak menggunakan penetapan sederhana dalam
+            ekspresi kondisional, karena penetapan dapat disalahartikan dengan
+            persamaan saat melihat sekilas kode. Misalnya, jangan gunakan kode
+            berikut:
+          </p>
+          <code>if (x = y) { /* statements here */ }</code>
+          <p>
+            If you need to use an assignment in a conditional expression, a
+            common practice is to put additional parentheses around the
+            assignment. For example:
+          </p>
+          <code>if ((x = y)) { /* statements here */ }</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="while-pernyataan">
+        <header>While Pernyataan</header>
+        <article>
+          <p>
+            Pernyataan while mengeksekusi pernyataannya selama kondisi yang
+            ditentukan bernilai true. Pernyataan while terlihat sebagai berikut:
+          </p>
+          <code>while (condition) statement</code>
+          <p>
+            If the condition becomes false, statement within the loop stops
+            executing and control passes to the statement following the loop.
+          </p>
+          <p>
+            Uji kondisi terjadi sebelum pernyataan dalam loop dijalankan. Jika
+            kondisi mengembalikan nilai true, pernyataan dieksekusi dan kondisi
+            diuji lagi. Jika kondisi kembali salah, eksekusi berhenti dan
+            kontrol diteruskan ke pernyataan setelah sementara.
+          </p>
+          <p>
+            To execute multiple statements, use a block statement ({ ... }) to
+            group those statements.
+          </p>
+          <p>Contoh:</p>
+          <p>
+            Perulangan while berikut ini berulang selama n kurang dari tiga:
+          </p>
+          <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+          <p>
+            Dengan setiap iterasi, loop menambah n dan menambahkan nilai itu ke
+            x. Oleh karena itu, x dan n mengambil nilai berikut:
+          </p>
+          <ul>
+            <li>Setelah lintasan pertama: n = 1 dan x = 1</li>
+            <li>Setelah lintasan kedua: n = 2 dan x = 3</li>
+            <li>Setelah lintasan ketiga: n = 3 dan x = 6</li>
+          </ul>
+          <p>
+            Setelah menyelesaikan lintasan ketiga, kondisi n &lt; 3 tidak lagi
+            benar, sehingga perulangan berakhir.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="deklarasi-fungsi">
+        <header>Deklarasi Function</header>
+        <article>
+          <p>
+            Definisi fungsi (juga disebut deklarasi fungsi, atau pernyataan
+            fungsi) terdiri dari kata kunci fungsi, diikuti oleh:
+          </p>
+          <ul>
+            <li>Nama fungsinya.</li>
+            <li>
+              Daftar argumen untuk fungsi tersebut, diapit dalam tanda kurung
+              dan dipisahkan dengan koma.
+            </li>
+            <li>
+              Pernyataan JavaScript yang mendefinisikan fungsi, diapit tanda
+              kurung kurawal, {}.
+            </li>
+          </ul>
+          <p>
+            Misalnya, kode berikut mendefinisikan fungsi sederhana bernama
+            persegi:
+          </p>
+          <code>function square(number) { return number * number; }</code>
+          <p>
+            Fungsi kuadrat membutuhkan satu argumen, disebut bilangan. Fungsi
+            terdiri dari satu pernyataan yang mengatakan untuk mengembalikan
+            argumen fungsi (yaitu, angka) dikalikan dengan dirinya sendiri.
+            Pernyataan return menentukan nilai yang dikembalikan oleh fungsi
+            tersebut.
+          </p>
+          <code>return number * number;</code>
+          <p>
+            Parameter primitif (seperti angka) diteruskan ke fungsi berdasarkan
+            nilai; nilai diteruskan ke fungsi, tetapi jika fungsi mengubah nilai
+            parameter, perubahan ini tidak tercermin secara global atau dalam
+            fungsi pemanggil.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="referensi">
+        <header>Referensi</header>
+        <article>
+          <ul>
+            <li>
+              Semua dokumentasi di halaman ini diambil dari
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
